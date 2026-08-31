@@ -171,9 +171,9 @@ const projects = [
   {
     number: "03",
     title: "Visit Group",
-    client: "Visit Group (Sweden / Norway)",
+    client: "Visit Group",
     role: "Design + Development",
-    tools: "Photoshop, HTML/CSS, JavaScript, Knockout.js",
+    tools: "Photoshop, HTML/CSS, JavaScript",
     period: "2015 – 2019",
     industry: "Booking Travel & Tourism",
     summary: "",
