@@ -1,0 +1,11 @@
+{
+  "title": "Marko Stjepanović — Design Engineer",
+  "description": "Design engineer with 17 years shipping frontend as a hybrid designer and developer. Currently building enterprise systems in Figma and TypeScript. Belgrade, Serbia.",
+  "robots": {
+    "index": true
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.hero-dots-light {
+  background-image: radial-gradient(circle, rgba(0,0,0,0.13) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.hero-dots-dark {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* loader */
+@keyframes charReveal {
+  0%   { opacity: 0; filter: blur(10px); transform: translateY(8px); }
+  100% { opacity: 1; filter: blur(0px);  transform: translateY(0); }
+}
+
+/* scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes dash-cw {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -200; }
+}
+@keyframes dash-ccw {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: 200; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 80s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d0d0d0 transparent;
+}
+
+::selection {
+  background: #111;
+  color: #fff;
+}
