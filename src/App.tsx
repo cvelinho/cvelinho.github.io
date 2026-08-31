@@ -66,7 +66,7 @@ const stackItems = [
 
 const experience = [
   {
-    company: "Trilogy Energy Solutions",
+    company: "Bridge IQ / Trilogy Energy Solutions",
     role: "Design Engineer",
     period: "Apr 2025 – Jul 2026",
     type: "Full-Time",
