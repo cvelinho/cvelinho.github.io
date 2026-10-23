@@ -67,7 +67,7 @@ const stackItems = [
 const experience = [
   {
     company: "Bridge IQ / Trilogy Energy Solutions",
-    role: "Design Engineer",
+    role: "Product Designer & Frontend Engineer",
     period: "Apr 2025 – Jul 2026",
     type: "Full-Time",
     desc: "Enterprise energy trading platform (TIES) — design and frontend across trade capture, query tooling, and TESSA AI assistant.",
@@ -81,7 +81,7 @@ const experience = [
   },
   {
     company: "Quantum – AutoMarket",
-    role: "Frontend Developer & Designer",
+    role: "Product Designer & Frontend Developer",
     period: "Feb 2019 – Sep 2023",
     type: "Full-Time",
     desc: "Serbia's largest automotive marketplaces (autohub.rs, prodajadelova.rs) on NopCommerce. Owned interaction design and frontend performance.",
@@ -128,15 +128,15 @@ const projects = [
     number: "01",
     title: "Trilogy TIES",
     client: "Trilogy Energy Solutions",
-    role: "Design + Frontend",
-    tools: "Figma, Aurelia, TypeScript",
+    role: "Product Design + Frontend Development",
+    tools: "Figma, AureliaJS, TypeScript",
     period: "2025 – 2026",
     industry: "ETRM",
     summary: "Enterprise platform for energy traders managing jobs, queries, and physical/financial trades against high-value counterparties.",
     desc: [
-      "TIES (Trilogy Integrated Energy System) is the platform Trilogy's traders use to manage complex trade lifecycles across physical and financial markets. I was responsible for the product design and frontend implementation, building the component framework from scratch on top of an existing backend. The work spanned trade capture, job scheduling, query tooling, and the TESSA assistant, among other areas.",
-      "TESSA is an embedded AI help-chat that surfaces contextual guidance with source citations, reducing onboarding friction for a system where every screen carries high-stakes financial decisions.",
-      "The design challenge was density: traders need to see everything at once. Every component was built to maximize information clarity without sacrificing usability under time pressure.",
+      "TIES is a platform used by Trilogy’s energy traders to manage trade lifecycles across physical and financial markets. I joined after an external agency had delivered the initial Figma designs, using them as a starting point to build a new reusable component framework from the ground up and deliver new modules on top of the existing backend. My work spanned trade capture, job scheduling, query tooling, the Automations module, and TESSA, the platform’s AI assistant.",
+      "Automations lets traders schedule and monitor recurring jobs, including imbalance calculations, deal audits, and daily cleanups. The module brings together three related views: automations, run history, and events. I consolidated them behind a single view switcher rather than a traditional tab row, preserving horizontal space for the data table. Favourite and overflow actions appear on row hover to keep the interface uncluttered, while hovering over a run count reveals the status of the last four runs without requiring users to leave the list. In the node-based automation builder, publishing is blocked until every step passes validation, with a checklist in the side panel guiding users through anything that still needs attention.",
+      "TESSA was the harder decision. Working with the AI developer, I prototyped a modal version and an embedded one, and we went with embedded so traders could consult it without leaving their current workflow — with inline citations back to the source documentation, so they could check where the answer came from before acting on it. A lot of this ran against a legacy codebase, which meant investigating the backend before I could design against it. Running both design and frontend meant those calls could happen in real time, as the system taught me what was possible.",
     ],
     images: [
       { src: tiesDashboard, caption: "Dashboards - Single dashboard details view" },
@@ -150,15 +150,15 @@ const projects = [
     number: "02",
     title: "Tietoevry Profinance",
     client: "Tietoevry",
-    role: "Design + Development",
-    tools: "Figma, Blazor, Telerik",
+    role: "Product Design + Frontend Development",
+    tools: "Figma, Adobe XD, Blazor, C#, Telerik UI",
     period: "2023 – 2025",
     industry: "	Banking & Leasing",
     summary: "",
     desc: [
-      "ProFinance is a leasing and finance SaaS used by banks across Europe to manage agreements, invoices, and regulatory reporting. I designed the interface in Figma and implemented it in Blazor and C#, owning the full design-to-code pipeline for the modules I shipped.",
-      "The work was form-heavy and detail-heavy: agreements with layered financial state, invoice breakdowns with line-item drill-down, and side-panel drawers that surfaced sub-views without pulling the user off context.",
-      "The tension was between speed and consistency. Telerik gave us production-grade primitives out of the box, but banking workflows demanded custom behaviour Telerik couldn't cover alone. I built a reusable component layer on top — Telerik where it fit, custom where it didn't — so the app felt like one system, not two.",
+      "ProFinance is a financial platform used by banks to manage leasing operations, agreements, and related financial processes. As a Product Designer, I worked with Business Analysts and internal power users to shape requirements, design intuitive interfaces for complex workflows, and bring those designs to life using Blazor and C#.",
+      "A leasing agreement is more than a single record. It brings together assets, invoices, line-item specifications, and transmission history. I designed the agreement screen around a persistent sidebar with clearly defined sections and a flexible KPI strip that displayed three to six metrics depending on the record type. This allowed the same interface to support both agreement-level and asset-level summaries. The audit trail, a regulatory requirement identified through collaboration with Business Analysts, was placed alongside invoice data in a contextual side panel rather than hidden inside a modal.",
+      "One of the main challenges was balancing design intent with the constraints of the component library. Telerik provided production-ready building blocks, but its default behaviour didn't always fit the needs of the interface. I focused on maintaining a consistent experience across the product, adapting designs in Figma where appropriate and building custom components when the existing ones fell short. Working across both design and implementation allowed me to make these decisions directly, balancing usability, technical constraints, and consistency throughout the development process.",
 
     ],
     images: [
@@ -170,9 +170,24 @@ const projects = [
   },
   {
     number: "03",
+    title: "Quantum-AutoMARKET",
+    client: "Quantum d.o.o.",
+    role: "Product Design + Frontend Development",
+    tools: "Photoshop, Figma, nopCommerce, jQuery",
+    period: "2009 – 2012, 2019 – 2023",
+    industry: "Automotive e-commerce",
+    summary: "",
+    desc: [
+      "A set of e-commerce shops for selling car parts (autohub.rs, prodajadelova.rs, and webshop.tokic.hr), alongside the internal applications that kept them running: admin consoles, management tools, and statistics dashboards for tracking inventory, orders, and customer activity. I worked across two tenures as the Product Designer and Frontend Developer, owning both the customer-facing experience and the operational side.",
+      "Most of the work involved building custom widgets on top of nopCommerce, including vehicle-first search, category filters, vehicle fitment on product pages, and checkout flows. The experience was designed to work seamlessly across mobile and desktop. On the admin side, the challenge was giving the client clear visibility into both marketplaces without overwhelming them with dashboards they didn’t need.",
+    ],
+    images: [] as { src: string; caption: string }[],
+  },
+  {
+    number: "04",
     title: "Visit Group",
     client: "Visit Group",
-    role: "Design + Development",
+    role: "Web Design + Frontend Development",
     tools: "Photoshop, HTML/CSS, JavaScript",
     period: "2015 – 2019",
     industry: "Booking Travel & Tourism",
@@ -190,10 +205,10 @@ const projects = [
     ],
   },
   {
-    number: "04",
+    number: "05",
     title: "The Empire Hotel (New York City)",
     client: "The Empire Hotel",
-    role: "Design + Development",
+    role: "Web & Graphic Design + Frontend Development",
     tools: "Photoshop, WordPress, HTML/CSS",
     period: "2016",
     industry: "Boutique Hospitality",
@@ -530,12 +545,7 @@ export default function App() {
                   I read design files the way engineers read code — because I write both.
                 </span>
                 <span>
-                  Nearly two decades of experience shipping frontend, most recently on enterprise systems where interface clarity has direct financial consequences. Figma to production code, full pipeline.
-                </span>
-                <span>
-                  Over the past year I've integrated AI into my daily workflow — using Claude for design-to-code translation and rapid iteration on complex UI states.
-                  <br/>
-                  Same craft, faster process.
+                  Nearly two decades shipping products across design and frontend, most recently on enterprise systems where interface clarity has direct financial consequences. Figma to production code, full pipeline — with AI in the loop where it saves time, and my judgment where it matters.
                 </span>
               </p>
 
@@ -787,7 +797,7 @@ export default function App() {
             </div>
 
             {/* Image gallery */}
-            <ProjectGallery images={p.images} t={t} />
+            {p.images.length > 0 && <ProjectGallery images={p.images} t={t} />}
 
             {idx < projects.length - 1 && <Divider t={t} />}
           </div>
